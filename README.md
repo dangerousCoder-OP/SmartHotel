@@ -1,1 +1,1 @@
-# SmartHotel
+# Smart-Hotel-management
