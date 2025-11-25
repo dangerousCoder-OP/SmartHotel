@@ -1,0 +1,8 @@
+.app-shell { display: flex; gap: 16px;  color: aqua;}
+.app-main { flex: 1; padding: 16px; }
+.page-header { margin-bottom: 12px; }
+.page-header h1 { margin: 0; font-size: 1.25rem; }
+ 
+/* Card polish */
+.card { transition: box-shadow .2s ease, transform .12s ease; }
+.card:hover { transform: translateY(-1px); box-shadow: 0 8px 28px hsl(var(--brand) / 0.12); }

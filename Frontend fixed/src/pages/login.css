@@ -1,0 +1,53 @@
+/* Login page module styles (scoped) */
+
+.auth-card { border-top: 3px solid hsl(var(--brand)); box-shadow: var(--shadow-elegant, 0 10px 30px -10px hsl(var(--brand) / 0.15)); }
+
+.auth-form input,
+.auth-form select { transition: border-color .2s ease, box-shadow .2s ease; }
+.auth-form input:hover,
+.auth-form select:hover { border-color: hsl(var(--ring)); }
+.auth-form input:focus,
+.auth-form select:focus { border-color: hsl(var(--brand)); box-shadow: 0 0 0 3px hsl(var(--brand) / 0.12); }
+
+.auth-card .btn-primary { background: linear-gradient(135deg, hsl(var(--brand)), hsl(var(--brand) / 0.9)); transition: transform .08s ease, filter .2s ease; }
+.auth-card .btn-primary:hover { filter: saturate(1.05) brightness(1.02); transform: translateY(-1px); }
+.auth-card .btn-primary:active { transform: translateY(0); }
+
+.auth-page .link { transition: color .2s ease; }
+.auth-page .link:hover { color: hsl(var(--brand)); }
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(var(--muted-foreground));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.password-toggle:hover {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--accent));
+}
+
+.password-toggle:focus {
+  outline: none;
+  color: hsl(var(--brand));
+}

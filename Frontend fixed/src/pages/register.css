@@ -1,0 +1,20 @@
+/* Register page module styles (scoped) */
+
+/* Simpler background than Login's vibrant gradient */
+.auth-page.register-page {
+  background: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)) 80%);
+}
+
+/* Match Login card/button/input behavior */
+.auth-card { border-top: 3px solid hsl(var(--brand)); box-shadow: var(--shadow-elegant, 0 10px 30px -10px hsl(var(--brand) / 0.15)); }
+
+.auth-form input,
+.auth-form select { transition: border-color .2s ease, box-shadow .2s ease; }
+.auth-form input:hover,
+.auth-form select:hover { border-color: hsl(var(--ring)); }
+.auth-form input:focus,
+.auth-form select:focus { border-color: hsl(var(--brand)); box-shadow: 0 0 0 3px hsl(var(--brand) / 0.12); }
+
+.auth-card .btn-primary { background: linear-gradient(135deg, hsl(var(--brand)), hsl(var(--brand) / 0.9)); transition: transform .08s ease, filter .2s ease; }
+.auth-card .btn-primary:hover { filter: saturate(1.05) brightness(1.02); transform: translateY(-1px); }
+.auth-card .btn-primary:active { transform: translateY(0); }
